@@ -15,6 +15,8 @@ class DosesController < ApplicationController
   end
 
   def destroy
+    @dose = Dose.find(params[:dose_id])
+    @dose.delete
   end
 
   private

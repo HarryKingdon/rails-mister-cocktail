@@ -3,7 +3,7 @@
 <h3>I N G R E D I E N T S</h3>
 <ul>
   <% @cocktail.doses.each do |dose| %>
-  <li><%= dose.description %> - <%= dose.ingredient.name %></</li>
+  <li><%= dose.description %> - <%= dose.ingredient.name %>. <%= link_to "Delete", method: :destroy %></</li>
   <% end %>
 </ul>
 
