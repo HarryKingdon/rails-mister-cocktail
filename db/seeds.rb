@@ -14,3 +14,16 @@ json = open(url).read
 hash = JSON.parse(json)
 arr = hash["drinks"]
 arr.each { |pair| Ingredient.create(name: pair["strIngredient1"]) }
+
+Cocktail.delete_all
+Cocktail.create(name: "Manhattan")
+Cocktail.create(name: "Bloody Mary")
+Cocktail.create(name: "Margarita")
+Cocktail.create(name: "Old Fashioned")
+Cocktail.create(name: "Mojito")
+Cocktail.create(name: "Daiquiri")
+Cocktail.create(name: "Gin and Tonic")
+Cocktail.create(name: "Espresso Martini")
+Cocktail.create(name: "Martini")
+Cocktail.create(name: "White Russian")
+
