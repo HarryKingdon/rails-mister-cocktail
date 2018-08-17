@@ -6,11 +6,18 @@
   <h2><i>the magnolia</i></h2>
 
   <!-- Right Navigation -->
-  <div class="navbar-wagon-right hidden-xs hidden-sm">
+  <div class="navbar-wagon-right hidden-xs">
     <%= link_to "check out all the cocktails", cocktails_path %>
   </div>
-  <div class="navbar-wagon-right hidden-xs hidden-sm">
+  <!-- <div class="navbar-wagon-right hidden-xs hidden-sm">
     <%= link_to "add to your palate", new_cocktail_path %>
+  </div> -->
+ <div class="navbar-wagon-item hidden-sm hidden-md hidden-lg">
+    <div class="dropdown">
+      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+        <li><%= link_to "check out all the cocktails", cocktails_path %></li>
+      </ul>
+    </div>
   </div>
 </div>
-
