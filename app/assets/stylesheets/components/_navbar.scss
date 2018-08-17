@@ -14,6 +14,9 @@
     line-height: 0;
     color: $green;
   }
+  position: sticky;
+  top: 0px;
+  z-index: 2;
 }
 
 /* Logo */
